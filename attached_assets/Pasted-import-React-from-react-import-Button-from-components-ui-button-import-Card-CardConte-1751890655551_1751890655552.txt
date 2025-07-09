@@ -1,0 +1,103 @@
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Github, Linkedin, Mail } from "lucide-react";
+
+export default function Portfolio() {
+  return (
+    <div className="min-h-screen bg-gray-100 p-6 text-gray-800">
+      {/* Hero Section */}
+      <section className="text-center py-10">
+        <h1 className="text-4xl font-bold mb-2">Hi, I'm Piyush Shukla</h1>
+        <p className="text-lg text-gray-600">Frontend Developer & DSA Enthusiast</p>
+        <div className="mt-4 flex justify-center gap-4">
+          <a href="https://github.com/piyushshuk1a" target="_blank">
+            <Button variant="outline"><Github className="mr-2" /> GitHub</Button>
+          </a>
+          <a href="https://www.linkedin.com/in/piyush-shukla-791238298/" target="_blank">
+            <Button variant="outline"><Linkedin className="mr-2" /> LinkedIn</Button>
+          </a>
+          <a href="mailto:piyushshukla6396@gmail.com">
+            <Button variant="outline"><Mail className="mr-2" /> Email</Button>
+          </a>
+        </div>
+      </section>
+
+      {/* About Me */}
+      <section className="py-10 max-w-3xl mx-auto">
+        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+        <p className="mb-2">
+          I'm a motivated and detail-oriented third-year B.Tech student in Electronics and Communication Engineering (2023–2027) with a CGPA of 7.6. I have a strong interest in frontend development and artificial intelligence.
+        </p>
+        <p className="mb-2">
+          I’ve solved 200+ DSA questions across platforms like LeetCode, CodeChef, Codeforces, GFG, and InterviewPrep.
+        </p>
+        <p>
+          I enjoy building clean, responsive interfaces and optimizing user experience.
+        </p>
+      </section>
+
+      {/* Skills */}
+      <section className="py-10 max-w-3xl mx-auto">
+        <h2 className="text-2xl font-semibold mb-4">Skills</h2>
+        <ul className="list-disc pl-5 space-y-1">
+          <li><strong>Languages & Tools:</strong> C++, HTML, CSS, JavaScript</li>
+          <li><strong>Frontend Framework:</strong> Bootstrap</li>
+          <li><strong>Core Concepts:</strong> Data Structures & Algorithms</li>
+          <li><strong>Soft Skills:</strong> Communication, Time Management</li>
+        </ul>
+      </section>
+
+      {/* Projects */}
+      <section className="py-10 max-w-5xl mx-auto">
+        <h2 className="text-2xl font-semibold mb-4">Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="font-bold text-lg">Tic Tac Toe Game</h3>
+              <p className="mb-2">A classic two-player game implemented with clean UI and responsive design.</p>
+              <p className="mb-2 text-sm text-gray-600">Technologies: HTML, CSS, JavaScript</p>
+              <a href="https://github.com/piyushshuk1a/Tic-Tac-Toe-game" target="_blank" className="text-blue-500">GitHub Repo</a>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="font-bold text-lg">Currency Converter</h3>
+              <p className="mb-2">A real-time currency converter using public API integration to convert between multiple currencies easily.</p>
+              <p className="mb-2 text-sm text-gray-600">Technologies: HTML, CSS, JavaScript</p>
+              <a href="https://github.com/piyushshuk1a" target="_blank" className="text-blue-500">GitHub Repo</a>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Experience */}
+      <section className="py-10 max-w-3xl mx-auto">
+        <h2 className="text-2xl font-semibold mb-4">Experience</h2>
+        <div>
+          <h3 className="font-bold">Freelance Contributor - Outlier AI</h3>
+          <p className="text-sm text-gray-600">Dec 2024 – Mar 2025</p>
+          <p>
+            Trained AI models using Reinforcement Learning from Human Feedback (RLHF).
+            Evaluated model responses, ranked outputs, and provided human-like feedback to optimize AI behavior.
+          </p>
+        </div>
+      </section>
+
+      {/* Languages Known */}
+      <section className="py-10 max-w-3xl mx-auto">
+        <h2 className="text-2xl font-semibold mb-4">Languages Known</h2>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Hindi (Fluent)</li>
+          <li>English (Professional Proficiency)</li>
+        </ul>
+      </section>
+
+      {/* Contact */}
+      <section className="py-10 max-w-3xl mx-auto text-center">
+        <h2 className="text-2xl font-semibold mb-4">Contact Me</h2>
+        <p>Email: <a className="text-blue-500" href="mailto:piyushshukla6396@gmail.com">piyushshukla6396@gmail.com</a></p>
+      </section>
+    </div>
+  );
+}
